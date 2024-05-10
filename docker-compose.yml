@@ -1,0 +1,28 @@
+version: '3.8'
+
+# Services
+services:
+  # Backend service
+  backend:
+    build:
+      context: ./backend
+      dockerfile: Dockerfile
+    container_name: backend
+    ports:
+      - "8080:8080"
+
+  # Frontend service
+  frontend:
+    build:
+      context: ./frontend
+      dockerfile: Dockerfile
+
+    container_name: frontend
+    ports:
+      - "4200:80"
+    depends_on:
+      - backend
+
+# Volumes define
+volumes: 
+  mydata:
