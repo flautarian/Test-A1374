@@ -1,8 +1,6 @@
 # Test-A1374
 Resolution of A1374 algorithm challenge in https://codeforces.com/problemset/problem/1374/A
 
-# Project Name
-
 ## Introduction
 
 This project contains a Spring Boot backend located in the `/backend` folder and an Angular 17 frontend located in the `/frontend` folder.
